@@ -219,24 +219,6 @@
         document.getElementById("gameOver").style.display = "flex";
       }
 
-      // O'yinni qayta boshlash
-      function restartGame() {
-        enemies.forEach((e) => e.remove());
-        enemies = [];
-
-        playerX = 150;
-        player.style.left = playerX + "px";
-
-        score = 0;
-        speed = 5;
-
-        document.getElementById("score").innerText = 0;
-        document.getElementById("gameOver").style.display = "none";
-
-        gameRunning = true;
-        gameLoop();
-      }
-
       // Asosiy o'yin
       let lastEnemy = 0;
 
